@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <title>iblog</title>
+</head>
+
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <span><img src="img/logo.png" width="94px"></span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <form action="search.html" method="get">
+                <input class="form-input" type="text" name="query" placeholder="Article Search">
+                <button class="btn">Search</button>
+            </form>
+        </div>
+
+    </nav>
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="content max-width-1 m-auto my-2">
+
+        <div class="content-left">
+            <span class="text-slider-items">
+                <h1>The Heaven For Blogger, A Place To Write Blog For Geeks</h1>
+            </span>
+            <h1><strong class="text-slider"></strong></h1>
+            <p>
+                A blog (a truncation of "weblog")[1] is a discussion or informational website published on the World
+                Wide Web consisting of discrete, often informal diary-style text entries (posts). Posts are typically
+            </p>
+
+        </div>
+        <div class="content-right">
+            <img src="img/2.svg" alt="iblog">
+
+        </div>
+
+    </div>
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="home-articles max-width-1 m-auto font2">
+        <div class="year-box .adjust-year">
+            <div>
+                <h3>Year</h3>
+            </div>
+            <div>
+                <input type="radio" name="year">2020
+            </div>
+            <div>
+                <input type="radio" name="year">2021
+            </div>
+        </div>
+        <h2>Featured Articles</h2>
+        <div class="home-article">
+            <div class="home-article-img ">
+                <img src="img/1.jpg" alt="articles">
+            </div>
+            <div class="home-article-content font1">
+                <a href="blogspot.html">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                </a>
+                <div>Author Name</div>
+                <span>2 November 6 min read</span>
+            </div>
+
+        </div>
+        <div class="home-article">
+            <div class="home-article-img ">
+                <img src="img/4.png" alt="articles">
+            </div>
+            <div class="home-article-content font1">
+                <a href="blogspot.html">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                </a>
+                <div>Author Name</div>
+                <span>2 November 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img ">
+                <img src="img/2.png" alt="articles">
+            </div>
+            <div class="home-article-content font1">
+                <a href="blogspot.html">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                </a>
+                <div>Author Name</div>
+                <span>2 November 6 min read</span>
+            </div>
+        </div>
+        <div class="home-article">
+            <div class="home-article-img ">
+                <img src="img/5.png" alt="articles">
+            </div>
+            <div class="home-article-content font1">
+                <a href="blogspot.html">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                </a>
+                <div>Author Name</div>
+                <span>2 November 6 min read</span>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        Copyright &copy; iBlog.in <a href="https://www.vecteezy.com/free-vector/cloud">Cloud Vectors by Vecteezy</a>
+
+    </div>
+    <script src="typed.js-master/lib/typed.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+
+    <!-- Add this script for successful  
+        implementation of typed.js  -->
+    <script>
+        if ($(".text-slider").length == 1) {
+
+            var typed_strings =
+                $(".text-slider-items").text();
+
+            var typed = new Typed(".text-slider", {
+                strings: typed_strings.split(", "),
+                typeSpeed: 50,
+                loop: true,
+                backDelay: 900,
+                backSpeed: 30,
+            });
+        } 
+    </script>
+</body>
+
+</html>
